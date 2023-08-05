@@ -1,0 +1,471 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+body{
+    font-weight: 400;
+    line-height: 1.5;
+    color: #8D9297;
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #182333;
+}
+
+/*head*/
+.head-icon{
+    border-left: 1px solid #dee2e6;
+}
+.border-right{
+    border-right: 1px solid #dee2e6;
+}
+.icon-head{
+    color: #8D9297;
+    text-decoration: none;
+    border-left: 1px solid #dee2e6;
+    font-size: 20px;
+}
+.nav-head{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #FDA12B;
+}
+.nav-link:hover{
+    color: #FDA12B!important;
+}
+.btn-primary:hover {
+    background-color: #ffc67c;
+    border: 1px solid transparent;
+}
+/* banner */
+.banner{
+    background-image: url(../img/carousel-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 900px;
+    position: relative;
+    z-index: 1;
+}
+.banner::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .65);
+    position: absolute;
+    inset: 0;
+    z-index:-1;
+}
+.banner_text{
+    color: white;
+}
+.banner_text h5 , h1{
+    color: white;
+}
+.banner_heading{
+    font-size: calc(1.575rem + 3.9vw);
+    font-weight: 700;
+    line-height: 1.2;
+}
+.banner_list{
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+}
+.banner_item{
+    font-size: 24px;
+}
+.banner_icon{
+    color: #fdaf4b;
+    padding: 8px;
+}
+.btn-primary{
+    background-color: #fdaf4b;
+    border-color: #FDA12B;
+}
+.btn{
+    transition:all .5s;
+    font-weight: 500;
+    border-radius: 0;
+
+}
+/* banner */
+/*about*/
+.about-img{
+    position: relative;
+    padding-left: 3rem;
+    padding-top: 3rem;
+    min-height: 400px
+}
+.about-img .img-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    padding-right: 16px;
+    padding-bottom: 16px;
+}
+.about-img .img-content .img-child{
+    background-color: #FDA12B;
+    text-align: center;
+    height: 100%;
+    color: white;
+}
+.text_head{
+    border-left: 5px solid #FDA12B;
+    padding-left: 24px;
+    margin-bottom: 48px;
+}
+.about-text .text_head h5{
+    font-size: 16px;
+    color: #8d9297;
+}
+.about-text .text_head h6{
+    font-size: calc(1.375rem + 1.5vw);
+    font-weight: 700;
+    line-height: 1.2;
+}
+.about_footer{
+    border-top: .5px solid rgb(151, 151, 151);
+}
+.about-icon{
+        color: #FDA12B;
+        font-size: 32px;
+        margin-right: 16px;
+}
+/*about*/
+/* fact */
+.fact-img{
+    position: relative;
+}
+.fact-overlay{
+    position: absolute;
+    inset: 0;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, .65);
+}
+.fact-overlay h2{
+    font-size: 120px;
+    color: transparent;
+    -webkit-text-stroke: 2px #FDA12B;
+}
+.fact-overlay h3{
+    color: white;
+    margin-bottom: 16px;
+}
+.fact-icon{
+    margin-left: 16px;
+    font-size: 15px;
+}
+.fact-btn{
+    color: white;
+}
+.fact-btn:hover{
+    color: #FDA12B;
+    cursor: pointer;
+}
+/* fact */
+/*features*/
+.feature-footer h6{
+     font-size: 20px;
+     font-weight: 600;
+}
+.feature-icon{
+    font-size: 40px;
+    color: #FDA12B;
+    margin-right: 10px;
+}
+.services_right{
+    text-align: right;
+}
+.services-text{
+    background-color: #F8F9FA;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+.services-text h2{
+    font-size: 1.25rem;
+}
+.services-btn{
+    color: #FDA12B;
+    font-size: 14px;
+}
+.services-text::after{
+    content: "";
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    inset: 0;
+    background-color: #FDA12B;
+    z-index: -1;
+    transition:all .5s;
+    opacity: 0;
+
+}
+.services-cart:hover .services-text::after{
+    height: 100%;
+    opacity: 1;
+}
+.services-cart:hover .services-btn{
+    color: white;
+}
+.services-cart:hover .services-text h2{
+    color:white;
+}
+.services-cart:hover .services-text p{
+    color:white;
+}
+/* appointment */
+.appointment{
+    background-image: url(../img/carousel-2.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.appointment::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, .65);
+    z-index: -1;
+
+}
+.app-head{
+    border-left: 5px solid #FDA12B; 
+}
+.app-head h2{
+    font-size: 16px;
+}
+.app-head h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.form_head{
+    border: 0;
+    position: relative;
+}
+.form-head label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 16px .75rem;
+    
+}
+.app-list{
+    background-color: #182333;
+    border: none;
+    border-radius: 0;
+}
+/* appointment */
+/* our team  */
+.team-img{
+    position: relative;
+}
+.team-text{
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    background-color: white;
+    width: 75%;
+    transition: .5s;
+}
+.team:hover .team-text{
+    width: 100%;
+    letter-spacing: 3px;
+}
+/* our team  */
+/* testimomoial */
+.nav-item{
+    border: 2px solid #FDA12B;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    color: transparent;
+    background-color: #007bff;
+}
+.active{
+    color: black!important;
+    background-color: transparent!important;
+}
+.border_top{
+    border-top: 5px solid #FDA12B;
+    width:15%;
+    margin-bottom: 16px;
+}
+.nav-item:hover{
+    background-color: #FDA12B;
+}
+.test-icon{
+    color: #FDA12B;
+    font-size: 40px;
+}
+.tes-text h2{
+    font-size: 40px
+
+}
+/* testimomoial */
+/* footer */
+.bg-footer{
+    background-color: #182333;
+}
+.icon-footer{
+    border: 1px solid #FDA12B;
+    padding: 10px;
+    font-size: 20px;
+}
+.d-flex a{
+    text-decoration: none;
+    color: #FDA12B;
+}
+.footer-links{
+    display: block;
+    text-decoration: none;
+    color: #8D9297;
+    margin-bottom: 10px;
+    transition: all .5s;
+}
+.footer-links:hover{
+    color: white;
+    letter-spacing: 1px;
+}
+.copyright {
+    padding: 25px 0;
+    font-size: 15px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}
+.copy-link{
+    text-decoration: none;
+    color: #FDA12B;
+}
+.footer-form{
+    position: relative;
+}
+.footer-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+/* footer */
+/* pagebanner */
+.page-banner{
+    background-image: url(../img/carousel-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+.page-banner::after{
+    content: "";
+    background-color: rgba(0, 0, 0, .65);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+.page-h{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.breadcrumb{
+    background-color: transparent!important;
+}
+.text-color{
+    color: #FDA12B!important;
+}
+/* pagebanner */
+.app-list-2{
+    background-color: #F8F9FA;
+    border: none;
+    border-radius: 0;
+}
+.error-text i{
+      font-size: 5rem;
+      color: #FDA12B;
+}
+@media screen and (max-width:992px) {
+    .media-head{
+        display: none;
+    }
+    .pl-5, .px-5 {
+        padding-left: 1.5rem!important;
+        padding-right:  1.5rem!important;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .banner{
+        height: 497px;
+    }
+    .about-img{
+        margin-bottom: 3rem;
+    }
+    .services_right{
+        text-align: start;
+        margin-top: 2rem;
+    }
+    .mb-0{
+        margin-top: 1rem!important;
+    }
+    .team{
+        margin-top: 1rem;
+    }
+    .contant{
+        margin-top: 3rem;
+    }
+    .mt-s{
+        margin-top: 3rem;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+}
+
+@media screen and (max-width:600px) {
+    .media-head{
+        display: none;
+    }
+    h1, .h1 {
+        font-size: calc(1.375rem + 1.5vw);
+    }
+    .test-icon {
+        color: #FDA12B;
+        font-size: 31px;
+    }
+    .mr-3, .mx-3 {
+        margin-right: .5rem!important;
+    }
+    .contant .row img{
+            width: 30%;
+    }
+    .text-light{
+        margin-top: 3rem;
+    }
+    .page-h {
+        font-size: 42px;
+    }
+
+}
